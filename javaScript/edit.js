@@ -1,4 +1,4 @@
-// Edit/New announcement functionality
+
 document.addEventListener('DOMContentLoaded', function() {
   const editForm = document.querySelector('.edit .formula');
   
@@ -6,26 +6,22 @@ document.addEventListener('DOMContentLoaded', function() {
     editForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Get form values
       const name = editForm.querySelector('input[placeholder="Name"]').value;
       const address = editForm.querySelector('input[placeholder="address"]').value;
       const postalCode = editForm.querySelector('input[placeholder="Postal code"]').value;
       const bookingMethod = editForm.querySelector('#bookingMethode').value;
       
-      // Get amenities
       const amenities = [];
       if (editForm.querySelector('#Parking').checked) amenities.push('Parking');
       if (editForm.querySelector('#Wifi').checked) amenities.push('Wifi');
       if (editForm.querySelector('#AirCond').checked) amenities.push('Air Conditioning');
       if (editForm.querySelector('#Balcony').checked) amenities.push('Balcony');
       
-      // Validate
       if (!name || !address || !postalCode) {
         alert('Please fill in all required fields');
         return;
       }
       
-      // In a real app, submit to API
       const announcementData = {
         name,
         address,
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Image preview functionality
   const imageInput = document.querySelector('.img');
   if (imageInput) {
     imageInput.addEventListener('change', function() {
@@ -48,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const reader = new FileReader();
         
         reader.onload = function(e) {
-          // Create preview image if it doesn't exist
+         
           let preview = document.querySelector('.img-preview');
           if (!preview) {
             preview = document.createElement('img');
