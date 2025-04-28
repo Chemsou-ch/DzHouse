@@ -1,6 +1,6 @@
-// Home page specific functionality
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Search form validation
+ 
   const searchForm = document.querySelector('.home-form form');
   if (searchForm) {
     searchForm.addEventListener('submit', function(e) {
@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       
-      // Redirect to search page with parameters
+      
       window.location.href = `search.html?location=${encodeURIComponent(name)}&checkin=${arriveDate}&checkout=${outDate}`;
     });
   }
   
-  // House listing hover effects
+
   const houses = document.querySelectorAll('.house');
   houses.forEach(house => {
     house.addEventListener('mouseenter', function() {
