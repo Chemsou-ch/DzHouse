@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Slabo+27px&display=swap');
+*{
+
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  
+
+}
+
+:root{
+  --main-color: #D9EAFD;
+  --second-color: #BCCCDC;
+  --text-color: black;
+  --bg-color:F8FAFC;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+}
+/*header part*/
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  border-bottom-right-radius:3rem ;
+  border-bottom-left-radius: 3rem;
+  box-shadow: 0px 5px 15px var(--second-color);
+}
+/* logo */
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  min-height: 100px;
+  max-height: 150px;
+}
+/*links*/
+.nav-links ul {
+  display: flex;
+}
+.nav-links ul li {
+  margin: 0 4%;
+  text-wrap: nowrap;
+  font-size: 20px;
+}
+
+.nav-links ul li :hover{
+  color: #5da9ff;
+}
+ /*profile*/
+.profile img{
+  min-height: 80px;
+  max-height: 100px;
+}
+
+/* images of house */
+
+.house-images{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  
+}
+
+.images{
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.principle-img img{
+  margin: 0rem 2rem 0rem 4rem;
+  height: 35rem;
+  width :45rem;
+}
+
+.other-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other-img img{
+  height: 17.5rem;
+  width: 20rem;
+  padding: 0.5rem ;
+}
+
+/* dipscreption part */
+.house-discreption{
+  margin-top: 8rem;
+  margin-left: 4rem;
+  font-size: 1.3rem;
+}
+
+.about{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.about-house{
+  width: 60%;
+}
+/* avantage */
+.avantage div a{
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+/* Rules */
+
+.Rules-booking{
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  margin-top: 8rem;
+}
+
+.rules{
+  width: 70%;
+}
+
+/* button */
+
+.bookingBtn button{
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  background-color: var(--main-color);
+  border: var(--main-color);
+  border-radius: 30px;
+}
+
+/* Review */
+
+.review{
+  margin-top: 8rem;
+  margin-left: 4rem;
+}
+
+.review div{
+  display: flex;
+  margin: 2.5rem 0rem 2.5rem 3rem;
+}
+
+.review div p{
+  margin-left: 2rem;
+}
+
+
+/*footer*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+  background-color: var(--main-color);
+}
+/* social media part */
+.social-media{
+  margin-top: 3rem;
+}
+.icon a{
+  display: flex;
+  margin: 0 0 3rem 0;
+  align-items: center;
+}
+.icon a img{
+  height: 2rem;
+}
+.icon a p{
+  margin-left: 2rem;
+}
+
+/*footer-company*/
+.company{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.partner{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (size < 1024 px) {
+  
+}

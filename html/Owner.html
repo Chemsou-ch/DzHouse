@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Owner.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- nav bar -->
+  <header>  
+    <!-- logo -->
+     <div class="logo">
+        <a href="index.html"></a>
+          <img src="../img/logo.png" alt="">
+          <h1>DZHOUSE</h1>
+        </a>
+     </div>
+    <!-- nav links-->
+     <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="">Log in</a></li>
+          <li><a href="Register.html">Register</a></li>
+        </ul>
+     </div>
+     <!--profile-->
+     <div class="profile">
+      <a href="Owner.html">
+        <img src="../img/profile.png" alt="">
+      </a>
+     </div>
+  </header>
+  <!-- Main -->
+   <article class="main">
+    <!-- profile formuler -->
+      <section class="info">
+        <div class="formuler">
+          <h2>Profile : </h2>
+          <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Family name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="email" required>
+            <div class="fileX">
+              <input type="file" id="uploadBtn" class="uploadBtn">
+              <label for="uploadBtn">ID photo</label>
+              <input type="file" id="uploadBtn" class="uploadBtn">
+              <label for="uploadBtn">Profile Photo</label>
+            </div>
+          </form>
+        </div>
+        <!-- msg part between owner and tenant -->
+        <div class="contact">
+          
+          <h2 id="msg">Contact tenet</h2>
+          <div class="filedText">
+          
+          <textarea placeholder="Type a message" id="msg">
+          </textarea>
+          <a href="">
+           <button class="sendBtn">Send to owner</button>
+          </a>
+          </div>
+        </div>
+      </section>
+      <section class="ownerpage">
+        <!-- table of owner house -->
+        <div class="annonce">
+          <table>
+            <h2>annoncement :</h2>
+            <tr>
+              <th>#</th>
+              <th>annoncement</th>
+              <th>ubdate</th>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>House 1</td>
+              <td class="update">
+                <button><a href="edit.html"><img src="..\img\social-media\repeare.png" alt=""></a></button>
+                <button><a href=""><img src="../img/social-media/icons8-done-20.png" alt=""></a></button>
+              </td>
+            <tr>
+              <td>002</td>
+              <td>House 2</td>
+              <td class="update">
+                <button><a href="edit.html"><img src="..\img\social-media\repeare.png" alt=""></a></button>
+                <button><a href=""><img src="../img/social-media/icons8-done-20.png" alt=""></a></button>
+              </td>
+            </tr>
+              <td>003</td>
+              <td>House 3</td>
+              <td class="update">
+                <button><a href="edit.html"><img src="..\img\social-media\repeare.png" alt=""></a></button>
+                <button><a href=""><img src="../img/social-media/icons8-done-20.png" alt=""></a></button>
+              </td>
+            </tr>
+            <tr>
+              <td>004</td>
+              <td>House 4</td>
+              <td class="update">
+                <button><a href="edit.html"><img src="..\img\social-media\repeare.png" alt=""></a></button>
+                <button><a href=""><img src="../img/social-media/icons8-done-20.png" alt=""></a></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- tabel of tenant request -->
+        <div class="bookingRequest">
+          <table>
+            <h2>Booking request :</h2>
+            <tr>
+              <th>tenant</th>
+              <th>annoncement</th>
+              <th>Res state</th>
+            </tr>
+            <tr>
+              <td>200</td>
+              <td>name of the annonce </td>
+              <td>
+                <img src="" alt="">
+                <img src="" alt="">
+              </td>
+            </tr>
+            <td>200</td>
+              <td>name of the annonce </td>
+              <td>
+                <img src="" alt="">
+                <img src="" alt="">
+              </td>
+            </tr>
+            <td>200</td>
+              <td>name of the annonce </td>
+              <td>
+                <img src="" alt="">
+                <img src="" alt="">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+   </article>
+  <footer>
+    <div class="social-media">
+      <h2>Social media</h2>
+      <div class="icon">
+         <a href="">
+          <img src="../img/social-media/facebook.png" alt="">
+          <p>Facebook</p>
+         </a>
+      </div>
+      <div class="icon">
+          <a href="">
+            <img src="../img/social-media/instagram.png" alt="">
+            <p>Instagram</p>
+          </a>
+      </div>
+      <div class="icon">
+          <a href="">
+            <img src="../img/social-media/whatsapp.png" alt="">
+            <p>WhatsApp</p>
+          </a>
+      </div>
+      <div class="icon">
+          <a href="">
+            <img src="../img/social-media/icons8-phone-24.png" alt="">
+            <p>Phone</p>
+          </a>
+      </div>
+    </div>
+    <div class="company">
+      <h2>Company</h2>
+      <a href="">
+        <p>Who are we ?</p>
+      </a>
+      <a href="">
+        <p>Term of use</p>
+      </a>
+      <a href="">
+        <p>Privacy policy</p>
+      </a>
+    </div>
+    <div class="partner">
+      <h2>partner</h2>
+      <a href="">
+        <p>Agence one</p>
+      </a>
+      <a href="">
+        <p>Agence two</p>
+      </a>
+      <a href="">
+        <p>Agence tree</p>
+      </a>
+      <a href="">
+        <p>Agence foor</p>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
