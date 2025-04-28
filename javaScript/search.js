@@ -1,12 +1,12 @@
-// Search page functionality
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Get search parameters from URL
+
   const urlParams = new URLSearchParams(window.location.search);
   const location = urlParams.get('location');
   const checkin = urlParams.get('checkin');
   const checkout = urlParams.get('checkout');
   
-  // Populate search form if parameters exist
+
   if (location || checkin || checkout) {
     const searchForm = document.querySelector('.home-form form');
     if (location) searchForm.querySelector('input[placeholder="name"]').value = location;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (checkout) searchForm.querySelector('input[placeholder="out date"]').value = checkout;
   }
   
-  // Filter functionality
+
   const filterForm = document.querySelector('aside');
   if (filterForm) {
     filterForm.addEventListener('change', function() {
@@ -25,16 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const wifi = filterForm.querySelector('#wifi').checked;
       const air = filterForm.querySelector('#air').checked;
       
-      // In a real app, this would filter results from an API
+   
       console.log('Applying filters:', { sorting, minPrice, maxPrice, parking, wifi, air });
     });
   }
   
-  // Listing click tracking
   const listings = document.querySelectorAll('.annonce');
   listings.forEach(listing => {
     listing.addEventListener('click', function() {
-      // Track which listing was clicked (analytics)
+      
       const title = this.querySelector('h3').textContent;
       console.log('Listing clicked:', title);
     });
