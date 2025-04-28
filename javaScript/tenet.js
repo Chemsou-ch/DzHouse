@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Reservation actions
+
   const reservationRows = document.querySelectorAll('.reserved tr:not(:first-child)');
   reservationRows.forEach(row => {
     row.addEventListener('click', function(e) {
-      if (e.target.closest('a')) return; // Allow link clicks
+      if (e.target.closest('a')) return; 
       
       const houseName = row.querySelector('td:first-child').textContent;
       const status = row.querySelector('td:nth-child(2)').textContent;
