@@ -1,12 +1,12 @@
-// Owner dashboard functionality
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Profile form submission
+
   const profileForm = document.querySelector('.formuler form');
   if (profileForm) {
     profileForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Validate form
+  
       const name = profileForm.querySelector('input[placeholder="Name"]').value;
       const familyName = profileForm.querySelector('input[placeholder="Family name"]').value;
       const phone = profileForm.querySelector('input[placeholder="Phone Number"]').value;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       
-      // Save profile (in a real app, this would be an API call)
+
       localStorage.setItem('ownerProfile', JSON.stringify({
         name, familyName, phone, email
       }));
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Message functionality
+
   const messageForm = document.querySelector('.contact');
   if (messageForm) {
     messageForm.addEventListener('submit', function(e) {
@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Table row actions
+ 
   const updateButtons = document.querySelectorAll('.update button');
   updateButtons.forEach(button => {
     button.addEventListener('click', function(e) {
-      if (e.target.closest('a')) return; // Allow link clicks
+      if (e.target.closest('a')) return;
       
       const row = this.closest('tr');
       const announcementId = row.querySelector('td:first-child').textContent;
       
       if (this.textContent.includes('Done') || this.querySelector('img[alt="Done"]')) {
-        // Mark as done
+   
         alert(`Announcement ${announcementId} marked as complete`);
       } else {
         // Edit action
