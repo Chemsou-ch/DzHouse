@@ -1,26 +1,25 @@
-// Property details page functionality
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Image gallery functionality
+
   const mainImage = document.querySelector('.principle-img img');
   const thumbnails = document.querySelectorAll('.other-img img');
   
   thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', function() {
-      // Swap main image with clicked thumbnail
+  
       const tempSrc = mainImage.src;
       mainImage.src = this.src;
       this.src = tempSrc;
     });
   });
   
-  // Booking button
+
   const bookingBtn = document.querySelector('.bookingBtn button');
   if (bookingBtn) {
     bookingBtn.addEventListener('click', function(e) {
       e.preventDefault();
       
-      // Check if user is logged in (simplified)
-      const isLoggedIn = localStorage.getItem('userToken'); // In a real app
+      const isLoggedIn = localStorage.getItem('userToken'); 
       
       if (!isLoggedIn) {
         if (confirm('You need to log in to book. Go to login page?')) {
@@ -29,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       
-      // Proceed with booking
+ 
       alert('Booking initiated! Redirecting to payment...');
-      // In a real app, redirect to booking/payment page
+ 
     });
   }
   
-  // Review functionality
+
   const reviews = document.querySelectorAll('.review div');
   reviews.forEach(review => {
     review.addEventListener('click', function() {
